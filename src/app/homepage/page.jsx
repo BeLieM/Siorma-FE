@@ -1,3 +1,4 @@
+import CardOrmawa from "@/components/ui/CardOrmawa";
 import CardPendaftaran from "@/components/ui/CardPendaftaran";
 import Image from "next/image";
 import Link from "next/link";
@@ -47,7 +48,7 @@ export default function HomePage() {
                 </div>
             </header>
 
-            <main className="max-w-8xl mx-auto px-4 mt-8 mb-6">
+            <main className="max-w-7xl mx-auto px-4 mt-8 mb-6 pb-28">
 
                 {/* Red Banner */}
                 <div className="w-full bg-red-600 rounded-[32px] px-8 py-8 md:px-12 md:py-10">
@@ -120,7 +121,6 @@ export default function HomePage() {
                 </div>
 
                 {/* Pendaftaran Tersedia */}
-
                 <p className="text-[#3f1f1d] font-medium mt-10 mb-4">
                     Pendaftaran Tersedia (4)
                 </p>
@@ -166,13 +166,31 @@ export default function HomePage() {
                 </div>
 
                 {/* Ormawa */}
-
                 <p className="text-[#3f1f1d] font-medium mt-10 mb-4">Ormawa</p>
-
                 
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    
+                    <CardOrmawa 
+                        title="Himpunan Mahasiswa Informatika"
+                        tags={["Organisasi", "Teknologi"]}
+                    />
 
+                    <CardOrmawa
+                        title="Himpunan Mahasiswa Sastra Mesin"
+                        tags={["Organisasi", "Teknologi"]}
+                    />
+
+                    <CardOrmawa
+                        title="Motion Laboratorium"
+                        tags={["LAB", "Teknologi"]}
+                    />
+
+                    <CardOrmawa
+                        title="Volley Telkom"
+                        tags={["Organisasi", "Olahraga"]}
+                    />
+                </div>
             </main>
-    
         </div>
     );
 }
