@@ -34,12 +34,12 @@ export default function HomePage() {
 
                     {/* Kanan - Menu */}
                     <nav className="flex items-center gap-10 text-[15px] font-medium">
-                        <Link href="#" 
+                        <Link href="/list-ormawa" 
                         className="text-black hover:text-[#A63E35] transition-colors">
                             Ormawa
                         </Link>
 
-                        <Link href="#" 
+                        <Link href="/list-postingan" 
                         className="text-black hover:text-[#A63E35] transition-colors">
                             Post
                         </Link>
@@ -51,7 +51,7 @@ export default function HomePage() {
             <main className="max-w-7xl mx-auto px-4 mt-8 mb-6 pb-28">
 
                 {/* Red Banner */}
-                <div className="w-full bg-red-600 rounded-[32px] px-8 py-8 md:px-12 md:py-10">
+                <div className="w-full bg-red-600 rounded-4xl px-8 py-8 md:px-12 md:py-10">
                     <h1 className="text-white text-3xl md:text-4xl font-bold">
                         Selamat Datang, John Smith!
                     </h1>
