@@ -33,7 +33,7 @@ export default function LoginPage() {
                         text-[#9F5555] 
                         placeholder-[#C7A5A5] 
                         bg-white
-                        border-1 border-red-600
+                        border border-red-600
                         rounded-xl
                         shadow-[0_6px_12px_rgba(229,113,113,0.35)]
                         focus:outline-none
@@ -55,7 +55,7 @@ export default function LoginPage() {
                         text-[#9F5555] 
                         placeholder-[#C7A5A5] 
                         bg-white
-                        border-1 border-red-600
+                        border border-red-600
                         rounded-xl
                         shadow-[0_6px_12px_rgba(229,113,113,0.35)]
                         focus:outline-none
@@ -75,17 +75,17 @@ export default function LoginPage() {
                         />
 
                         <div className="
-                            w-6 h-6 rounded-md border-1 border-red-600 
+                            w-6 h-6 rounded-md border border-red-600 
                             flex items-center justify-center
-                            group-has-[:checked]:bg-red-600 
-                            group-has-[:checked]:border-red-600
+                            group-has-checked:bg-red-600 
+                            group-has-checked:border-red-600
                             transition-all
                         ">
                             <svg
                                 className="
                                     w-6 h-6 text-white 
                                     opacity-0 
-                                    group-has-[:checked]:opacity-100
+                                    group-has-checked:opacity-100
                                     transition-opacity
                                 "
                                 fill="none"
